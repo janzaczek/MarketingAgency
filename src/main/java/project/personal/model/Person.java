@@ -20,10 +20,15 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column
-    private String imie;
+    private String name;
     @Column
-    private String nazwisko;
+    private String surname;
     @Column
-    private Plec plec;
-
+    private Plec gender;
+    @Column
+    private Integer age;
+    @Column
+    private String phoneNumber;
+    @Column
+    private String email;
 }
